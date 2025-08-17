@@ -1,6 +1,6 @@
 # DMML_55_Assignment01
 
-##**Title: End-to-End Data Management Pipeline for Machine Learning**
+# **Title: End-to-End Data Management Pipeline for Machine Learning**
 
 **Objective:**
 •	Design, implement, and orchestrate a complete data management pipeline for a machine learning project, addressing all stages from problem formulation to pipeline orchestration.
