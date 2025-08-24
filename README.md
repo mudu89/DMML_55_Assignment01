@@ -29,7 +29,7 @@ It covers all stages from **problem formulation → ingestion → validation →
 ## Deliverables by Task
 
 ### Task 1 – Problem Formulation
-- 📄 [Task1_Problem_Formulation/Task1_Problem_Formulation.md](Task1_Problem_Formulation.md)  
+- 📄 [Problem Formulation](Task1_Problem_Formulation/Task1_Problem_Formulation.md)  
 - Defines the **business problem, objectives, and data sources** for churn prediction in the Telecom/Pay-TV domain.  
 
 ### Task 2 – Data Ingestion
@@ -38,7 +38,7 @@ It covers all stages from **problem formulation → ingestion → validation →
 
 ### Task 3 – Raw Data Storage
 - Data lake folder structure (partitioned by source/type/date).
-- [Task3_RawDataStorage/Task3_RawDataStorage.md](Folder Structure)  
+- [Folder Structure](Task3_RawDataStorage/Task3_RawDataStorage.md)  
 - Python scripts to upload/store ingested raw data.  
 
 ### Task 4 – Data Validation
