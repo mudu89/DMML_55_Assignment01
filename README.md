@@ -1,10 +1,12 @@
 
 # End-to-End Data Management Pipeline for Machine Learning  
+
 *Assignment I – Data Management for Machine Learning (BITS Pilani)*  
 
 ---
 
 ## Project Overview
+
 This project implements a complete **data management pipeline** for a **Telecom / Pay-TV churn prediction** use case.  
 It covers all stages from **problem formulation → ingestion → validation → preparation → transformation → feature store → versioning → modeling → orchestration**.  
 
@@ -13,17 +15,29 @@ It covers all stages from **problem formulation → ingestion → validation →
 ## Repository Structure
 
 ├── README.md # Project index (this file)
+
 ├── Task1_Problem_Formulation/
+
 ├── Task2_DataIngestion/ # scripts + logs
+
 ├── Task3_RawDataStorage/
+
 ├── Task4_DataValidation/
+
 ├── Task5_DataPreparation/
+
 ├── Task6_DataTransformation/
+
 ├── Task7_FeatureStore/
+
 ├── Task8_DataVersioning/
+
 ├── Task9_ModelBuilding/
+
 ├── Task10_Orchestration/
+
 └── data/ # raw, validated, transformed datasets
+
 ---
 
 ## Deliverables by Task
