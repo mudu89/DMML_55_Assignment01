@@ -31,11 +31,12 @@ The churn prediction pipeline should support the following objectives:
 ### **A. CRM / Service Tickets** (Primary churn ground truth)  
 - **ticket_id** – unique identifier of service request  
 - **customer_id** – foreign key to customer master  
-- **product_id** – product/service being disconnected  
+- **product_id** – product/service being referenced  
 - **created_at** – timestamp of request  
-- **request_type** – e.g., disconnect, complaint, upgrade  
-- **disconnect_reason** – e.g., competitor offer, service issues, relocation  
-- **status** – open, closed (closed + disconnect = churn event)  
+- **request_type** – e.g., disconnect, complaint, upgrade, inquiry  
+- **disconnect_reason** – e.g., competitor_offer, pricing_issues, service_quality, relocation (only populated for disconnect requests)  
+- **request_reason** – e.g., service_issues, billing_dispute, technical_support, service_upgrade (populated for non-disconnect requests)  
+- **status** – open, closed, pending, resolved  
 
 ---
 

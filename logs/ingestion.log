@@ -34,3 +34,19 @@
 2025-08-24 06:43:12,566 - billing - INFO - Billing data loaded from DB: 2 records
 2025-08-24 06:43:12,574 - subscriptions - INFO - Subscriptions data loaded from DB: 2 records
 2025-08-24 06:43:12,575 - ingestion - INFO - All data ingested successfully. Total records: 4
+2025-08-24 07:30:18,281 - ingestion - INFO - Starting data ingestion for DB source data...
+2025-08-24 07:30:18,462 - billing - INFO - Billing data loaded from DB: 2 records
+2025-08-24 07:30:18,687 - subscriptions - INFO - Subscriptions data loaded from DB: 2 records
+2025-08-24 07:30:18,857 - ingestion - INFO - All data ingested successfully. Total records: 4
+2025-08-24 09:45:51,872 - ingestion - INFO - Starting data ingestion for all data sources...
+2025-08-24 09:45:51,879 - billing - INFO - Billing data loaded from DB: 2 records
+2025-08-24 09:45:51,890 - subscriptions - INFO - Subscriptions data loaded from DB: 2 records
+2025-08-24 09:45:51,909 - crm - INFO - CRM data loaded from CSV: 15 records
+2025-08-24 09:45:51,912 - ingestion - INFO - All data ingested successfully. Sources: 3, Total records: 19
+2025-08-24 09:45:51,914 - ingestion - INFO - Data sources: billing (2), subscriptions (2), crm (15)
+2025-08-24 09:53:53,807 - ingestion - INFO - Starting data ingestion for all data sources...
+2025-08-24 09:53:54,024 - billing - INFO - Billing data loaded from DB: 2 records
+2025-08-24 09:53:54,049 - subscriptions - INFO - Subscriptions data loaded from DB: 2 records
+2025-08-24 09:53:54,078 - crm - INFO - CRM data loaded from CSV: 15 records
+2025-08-24 09:53:54,083 - ingestion - INFO - All data ingested successfully. Sources: 3, Total records: 19
+2025-08-24 09:53:54,245 - ingestion - INFO - Data sources: billing (2), subscriptions (2), crm (15)

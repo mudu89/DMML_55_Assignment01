@@ -9,10 +9,11 @@
 ## Table Details
 {table_details}
 
-## Data Source
-- **Database**: SQLite (telecom.db)
+## Data Sources
+- **Database**: SQLite (telecom.db) - billing, subscriptions
+- **CSV Files**: crm.csv - customer service tickets
 - **Location**: Task2_DataIngestion/sources/
-- **Query Method**: SELECT * FROM [table_name]
+- **Query Method**: SELECT * FROM [table_name] | pd.read_csv()
 
 ## Performance Metrics
 - **Execution Time**: {execution_time}

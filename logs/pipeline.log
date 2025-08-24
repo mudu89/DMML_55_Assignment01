@@ -276,3 +276,66 @@
 2025-08-24 06:43:16,436 - pipeline - INFO - ML Data Pipeline completed successfully!
 2025-08-24 06:43:16,438 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
 2025-08-24 06:43:16,976 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 07:28:36,329 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 07:28:41,330 - pipeline - INFO - Prefect server is ready!
+2025-08-24 07:28:41,331 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 07:30:14,532 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 07:30:14,697 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 07:30:18,109 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 07:30:19,280 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 07:30:22,393 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 07:30:23,256 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 07:30:25,862 - pipeline - INFO - Starting data validation
+2025-08-24 07:30:27,035 - pipeline - INFO - Data validation completed. Quality Score: 80/100, Issues: 3
+2025-08-24 07:30:28,564 - pipeline - INFO - Starting data preparation...
+2025-08-24 07:30:28,580 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 07:30:30,003 - pipeline - INFO - Starting data transformation...
+2025-08-24 07:30:30,017 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 07:30:32,217 - pipeline - INFO - Starting feature store update...
+2025-08-24 07:30:32,247 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 07:30:34,413 - pipeline - INFO - Starting data versioning...
+2025-08-24 07:30:34,426 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 07:30:36,964 - pipeline - INFO - Starting model building...
+2025-08-24 07:30:37,137 - pipeline - INFO - Model building completed successfully!
+2025-08-24 07:30:37,252 - pipeline - INFO - ML Data Pipeline completed successfully!
+2025-08-24 07:30:37,475 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 07:30:41,376 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 09:45:25,366 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 09:45:30,387 - pipeline - INFO - Prefect server is ready!
+2025-08-24 09:45:30,388 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 09:45:51,209 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 09:45:51,211 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 09:45:51,870 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 09:45:51,917 - pipeline - INFO - Data ingestion completed - Total records: 19
+2025-08-24 09:45:52,529 - pipeline - INFO - Starting raw data storage for 3 data sources
+2025-08-24 09:45:52,564 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 09:45:53,143 - pipeline - INFO - Starting data validation
+2025-08-24 09:45:53,147 - pipeline - ERROR - Data validation error: validate_all_data() missing 1 required positional argument: 'validation_date'
+2025-08-24 09:45:53,164 - pipeline - INFO - Starting data validation
+2025-08-24 09:45:53,167 - pipeline - ERROR - Data validation error: validate_all_data() missing 1 required positional argument: 'validation_date'
+2025-08-24 09:45:53,197 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 09:45:54,130 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 09:52:26,585 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 09:52:31,590 - pipeline - INFO - Prefect server is ready!
+2025-08-24 09:52:31,590 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 09:53:50,906 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 09:53:51,071 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 09:53:53,765 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 09:53:54,856 - pipeline - INFO - Data ingestion completed - Total records: 19
+2025-08-24 09:53:56,528 - pipeline - INFO - Starting raw data storage for 3 data sources
+2025-08-24 09:53:56,983 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 09:53:58,993 - pipeline - INFO - Starting data validation
+2025-08-24 09:54:00,373 - pipeline - INFO - Data validation completed. Quality Score: 75/100, Issues: 4
+2025-08-24 09:54:02,353 - pipeline - INFO - Starting data preparation for churn prediction
+2025-08-24 09:54:08,025 - pipeline - INFO - Data preparation completed. Dataset shape: (2, 18), Churn rate: 100.0%
+2025-08-24 09:54:09,869 - pipeline - INFO - Starting data transformation...
+2025-08-24 09:54:10,185 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 09:54:12,607 - pipeline - INFO - Starting feature store update...
+2025-08-24 09:54:12,920 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 09:54:15,325 - pipeline - INFO - Starting data versioning...
+2025-08-24 09:54:15,372 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 09:54:17,758 - pipeline - INFO - Starting model building...
+2025-08-24 09:54:17,777 - pipeline - INFO - Model building completed successfully!
+2025-08-24 09:54:17,788 - pipeline - INFO - ML Data Pipeline completed successfully!
+2025-08-24 09:54:17,829 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 09:54:19,560 - pipeline - INFO - ML Pipeline run completed.

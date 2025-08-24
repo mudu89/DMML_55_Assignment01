@@ -1,4 +1,4 @@
-# 🗂️ Data Lake Storage Report
+# Data Lake Storage Report
 
 ## Storage Structure  
 data/raw/         

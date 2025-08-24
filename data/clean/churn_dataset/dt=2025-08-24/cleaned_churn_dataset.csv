@@ -1,0 +1,3 @@
+,invoice_id,customer_id,amount_due,amount_paid,payment_method,product_id_billing,invoice_date,payment_date,payment_status,plan_type,monthly_fee,status,product_id_subscription,subscription_start,total_tickets,request_types,last_ticket_date,is_churned
+0,INV0001,CUST001,55.0,55.0,Credit Card,TV001,2025-08-01,2025-08-05,Paid,Month-to-month,55.0,active,TV001,2023-01-01,2,disconnect,2024-08-18 16:45:00,1
+1,INV0002,CUST002,120.0,0.0,Mailed Check,BB001,2025-08-01,,Pending,One year,120.0,churned,BB001,2022-05-01,2,"complaint, disconnect",2024-08-22 17:30:00,1

@@ -1,5 +1,11 @@
 """
-ML Pipeline Orchestration using Prefect
+ML Pipeline Or# Import functions (after adding project root to path)
+from utils.logger import get_logger
+from template_utils import load_markdown_template, format_table_details, format_storage_tree, format_validation_quality_badge, format_validation_issues, format_table_summaries, format_completeness_overview, format_business_rules_summary, format_validation_recommendations, format_cleaning_summary, format_eda_insights, format_quality_issues
+from Task2_DataIngestion.ingestion import ingest_all_data
+from Task3_RawDataStorage.data_storage import store_multiple_tables
+from Task4_DataValidation.data_validation import validate_all_data
+from Task5_DataPreparation.data_preparation import prepare_clean_datasetration using Prefect
 DMML Assignment 01 - Task 10
 """
 
@@ -19,10 +25,11 @@ sys.path.append(project_root)
 
 # Import functions (after adding project root to path)
 from utils.logger import get_logger
-from template_utils import load_markdown_template, format_table_details, format_storage_tree, format_file_details
+from template_utils import *
 from Task2_DataIngestion.ingestion import ingest_all_data
 from Task3_RawDataStorage.data_storage import store_multiple_tables
-
+from Task4_DataValidation.data_validation import validate_all_data
+from Task5_DataPreparation.data_preparation import prepare_clean_dataset
 
 logger = get_logger("pipeline", log_file=os.path.join(project_root, "logs", "pipeline.log"))
 
@@ -135,21 +142,88 @@ def task_raw_data_storage(data):
 @task(name="Data Validation", retries=1)
 def task_data_validation():
     """
-    Task 4: Validate data quality and generate reports
+    Task 4: Validate data quality and generate comprehensive reports
     """
-    # Dual logging: Prefect UI + Local files
-    # prefect_logger = get_run_logger()
-    # local_logger = get_logger("ml_pipeline_validation")
     prefect_logger = get_run_logger()
     try:
-        prefect_logger.info("Starting data validation...")
+        prefect_logger.info("🔍 Starting comprehensive data validation...")
         logger.info("Starting data validation")
+        validation_date = datetime.today().date().isoformat()
+        # Run data validation
+        validation_results = validate_all_data(validation_date)
         
-        # This will run your validation scripts when implemented
-        prefect_logger.info("Data validation completed successfully!")
-        logger.info("Data validation completed successfully")
+        # Log results to both systems
+        quality_score = validation_results['quality_score']
+        total_issues = validation_results['total_issues']
         
-        return {"status": "success", "message": "Data validation checks passed"}
+        prefect_logger.info(f"Data Quality Score: {quality_score}/100")
+        prefect_logger.info(f"Issues Found: {total_issues}")
+        logger.info(f"Data validation completed. Quality Score: {quality_score}/100, Issues: {total_issues}")
+        
+        # Create Prefect Artifacts for Task 4
+        # 1. Quality Score Table
+        quality_summary = []
+        for table, shape in validation_results['data_summary'].items():
+            quality_summary.append({
+                "Table": table.title(),
+                "Records": f"{shape[0]:,}",
+                "Columns": shape[1],
+                "Status": "Validated" if quality_score >= 70 else " Issues Found"
+            })
+        
+        create_table_artifact(
+            key="validation-quality-summary",
+            table=quality_summary,
+            description=f"Data Quality Summary - Score: {quality_score}/100"
+        )
+        
+        # 2. Comprehensive Validation Report using Template
+        validation_report = validation_results['validation_report']
+        
+        create_markdown_artifact(
+            key="validation-comprehensive-report",
+            markdown=load_markdown_template(
+                "validation_report_template",
+                validation_date=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                quality_score=quality_score,
+                quality_assessment=validation_report['quality_assessment'],
+                total_issues=total_issues,
+                tables_count=len(validation_results['data_summary']),
+                quality_badge=format_validation_quality_badge(quality_score),
+                table_summaries=format_table_summaries(validation_results['validation_report']['validation_results']),
+                issues_list=format_validation_issues(validation_report.get('issues_summary', [])),
+                business_rules_summary=format_business_rules_summary(
+                    validation_results['validation_report']['validation_results'].get('business_rules', {})
+                ),
+                completeness_overview=format_completeness_overview(
+                    validation_results['validation_report']['validation_results']
+                ),
+                recommendations=format_validation_recommendations(quality_score, total_issues)
+            ),
+            description="Comprehensive Data Validation Report with Quality Assessment"
+        )
+        
+        # 3. Link to Quality Guidelines
+        create_link_artifact(
+            key="validation-guidelines",
+            link="https://docs.prefect.io/latest/concepts/artifacts/",
+            description="Data Quality Guidelines and Best Practices"
+        )
+        
+        prefect_logger.info("Created validation artifacts: quality summary, comprehensive report, and guidelines")
+        
+        # Determine if pipeline should continue based on quality score
+        if quality_score < 60:
+            prefect_logger.warning(f"Data quality score ({quality_score}) is below acceptable threshold (60)")
+            logger.warning(f"Data quality score ({quality_score}) below threshold")
+        
+        return {
+            "status": "success", 
+            "message": f"Data validation completed with quality score: {quality_score}/100",
+            "quality_score": quality_score,
+            "total_issues": total_issues,
+            "validation_results": validation_results
+        }
         
     except Exception as e:
         prefect_logger.error(f"Data validation error: {str(e)}")
@@ -159,20 +233,110 @@ def task_data_validation():
 @task(name="Data Preparation", retries=1)
 def task_data_preparation():
     """
-    Task 5: Clean and preprocess data, perform EDA
+    Task 5: Clean, merge and prepare data for churn prediction
+    Creates the master churn dataset from billing, subscriptions, and CRM data
     """
     prefect_logger = get_run_logger()
     try:
-        prefect_logger.info("Starting data preparation...")
-        logger.info("Starting data preparation...")
+        prefect_logger.info("🔧 Starting comprehensive data preparation...")
+        logger.info("Starting data preparation for churn prediction")
         
-        # This will run your preparation scripts
-        prefect_logger.info("Data preparation completed successfully!")
-        logger.info("Data preparation completed successfully!")
-        return {"status": "success", "message": "Data cleaning and EDA completed"}
+        # Run data preparation
+        preparation_results = prepare_clean_dataset()
+        
+        # Extract key metrics
+        dataset_shape = preparation_results['master_dataset_shape']
+        eda_insights = preparation_results['eda_insights']
+        preparation_summary = preparation_results['preparation_summary']
+        
+        # Log results to both systems
+        prefect_logger.info(f"📊 Clean dataset created: {dataset_shape[0]:,} customers × {dataset_shape[1]} columns")
+        prefect_logger.info(f"🎯 Churn rate: {eda_insights['churn_rate']}%")
+        if 'avg_billing_amount' in eda_insights:
+            prefect_logger.info(f"💰 Avg billing amount: ${eda_insights['avg_billing_amount']:,.2f}")
+        logger.info(f"Data preparation completed. Dataset shape: {dataset_shape}, Churn rate: {eda_insights['churn_rate']}%")
+        
+        # Create Prefect Artifacts for Task 5
+        # 1. Dataset Summary Table
+        dataset_summary = [
+            {
+                "Metric": "Total Customers",
+                "Value": f"{eda_insights['total_customers']:,}",
+                "Description": "Unique customers in master dataset"
+            },
+            {
+                "Metric": "Churned Customers", 
+                "Value": f"{eda_insights['churned_customers']:,}",
+                "Description": "Customers with completed disconnect requests"
+            },
+            {
+                "Metric": "Churn Rate",
+                "Value": f"{eda_insights['churn_rate']}%",
+                "Description": "Percentage of customers who churned"
+            },
+            {
+                "Metric": "Features Created",
+                "Value": str(dataset_shape[1]),
+                "Description": "Raw columns after joining (before feature engineering)"
+            },
+            {
+                "Metric": "Avg Billing Amount",
+                "Value": f"${eda_insights.get('avg_billing_amount', 0):,.2f}",
+                "Description": "Average billing amount per customer"
+            }
+        ]
+        
+        create_table_artifact(
+            key="preparation-dataset-summary",
+            table=dataset_summary,
+            description="📊 Churn Dataset Preparation Summary"
+        )
+        
+        # 2. Comprehensive Preparation Report using Template
+        create_markdown_artifact(
+            key="preparation-comprehensive-report",
+            markdown=load_markdown_template(
+                "preparation_report_template",
+                preparation_date=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                source_partition=preparation_results['save_results']['partition_date'],
+                final_rows=dataset_shape[0],
+                final_columns=dataset_shape[1],
+                cleaning_summary=format_cleaning_summary(preparation_summary['cleaning_summary']),
+                eda_insights=format_eda_insights(eda_insights),
+                quality_issues=format_quality_issues(preparation_summary['data_quality_issues'])
+            ),
+            description="📋 Comprehensive Data Preparation Report"
+        )
+        
+        # 3. Link to Clean Dataset Location
+        clean_data_path = preparation_results['save_results']['output_file']
+        create_link_artifact(
+            key="clean-dataset-location",
+            link="file://" + clean_data_path.replace("\\", "/"),
+            description="📁 Clean Churn Dataset Location"
+        )
+        
+        prefect_logger.info("📊 Created preparation artifacts: dataset summary, comprehensive report, and dataset link")
+        
+        # Assess data readiness for modeling
+        churn_rate = eda_insights['churn_rate']
+        if churn_rate < 5:
+            prefect_logger.warning(f"⚠️ Low churn rate ({churn_rate}%) may impact model performance")
+        elif churn_rate > 50:
+            prefect_logger.warning(f"⚠️ High churn rate ({churn_rate}%) indicates serious business issues")
+        else:
+            prefect_logger.info(f"✅ Churn rate ({churn_rate}%) is within acceptable range for modeling")
+        
+        return {
+            "status": "success",
+            "message": f"Data preparation completed. Master dataset: {dataset_shape[0]:,} customers, {churn_rate}% churn rate",
+            "dataset_shape": dataset_shape,
+            "churn_rate": churn_rate,
+            "preparation_results": preparation_results
+        }
         
     except Exception as e:
-        prefect_logger.error(f"Data preparation error: {str(e)}")
+        prefect_logger.error(f"❌ Data preparation error: {str(e)}")
         logger.error(f"Data preparation error: {str(e)}")
         raise
 
