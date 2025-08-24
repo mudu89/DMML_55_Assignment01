@@ -14,18 +14,18 @@ It covers all stages from **problem formulation → ingestion → validation →
 
 ## Repository Structure
 
-├── README.md # Project index (this file)
-├── Task1_Problem_Formulation/
-├── Task2_DataIngestion/ # scripts + logs
-├── Task3_RawDataStorage/
-├── Task4_DataValidation/
-├── Task5_DataPreparation/
-├── Task6_DataTransformation/
-├── Task7_FeatureStore/
-├── Task8_DataVersioning/
-├── Task9_ModelBuilding/
-├── Task10_Orchestration/
-└── data/ # raw, validated, transformed datasets
+├── README.md # Project index (this file)  
+├── Task1_Problem_Formulation/  
+├── Task2_DataIngestion/ # scripts + logs  
+├── Task3_RawDataStorage/  
+├── Task4_DataValidation/  
+├── Task5_DataPreparation/  
+├── Task6_DataTransformation/  
+├── Task7_FeatureStore/  
+├── Task8_DataVersioning/  
+├── Task9_ModelBuilding/  
+├── Task10_Orchestration/  
+└── data/ # raw, validated, transformed datasets  
 
 ---
 
