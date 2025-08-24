@@ -2,7 +2,7 @@
 
 ## Storage Structure
 
-data/raw/
+data/raw/ \n
 ├── billing/
 |   └── dt=2025-08-24       
 |       └── billing.csv
