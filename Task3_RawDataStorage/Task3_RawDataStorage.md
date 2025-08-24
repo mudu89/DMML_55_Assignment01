@@ -1,13 +1,14 @@
 # 🗂️ Data Lake Storage Report
 
 ## Storage Structure
+
 data/raw/
-        ├── billing/
-        |    └── dt=2025-08-24       
-        |        └── billing.csv
-        └── subscriptions    
-            └── dt=2025-08-24/       
-                └── subscriptions.csv
+├── billing/
+|   └── dt=2025-08-24       
+|       └── billing.csv
+└── subscriptions    
+    └── dt=2025-08-24/       
+        └── subscriptions.csv
 
 ## Storage Details
   **Storage Format**: CSV files
