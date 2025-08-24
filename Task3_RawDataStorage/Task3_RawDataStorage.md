@@ -6,9 +6,9 @@ data/raw/
 
 ├── billing/
 
-|   └── dt=2025-08-24      
+    └── dt=2025-08-24      
 
-|       └── billing.csv
+        └── billing.csv
 
 └── subscriptions    
 
