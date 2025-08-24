@@ -10,7 +10,7 @@ data/raw/
 
         └── billing.csv
 
-└── subscriptions    
+└── subscriptions/  
 
     └── dt=2025-08-24/       
     
