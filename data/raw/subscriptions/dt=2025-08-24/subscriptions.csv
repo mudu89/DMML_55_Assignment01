@@ -1,0 +1,3 @@
+customer_id,plan_type,monthly_fee,status,product_id,subscription_start
+CUST001,Month-to-month,55.0,Active,TV001,2023-01-01
+CUST002,One year,120.0,Churned,BB001,2022-05-01

@@ -1,0 +1,3 @@
+invoice_id,customer_id,amount_due,amount_paid,payment_method,product_id,invoice_date,payment_date,payment_status
+INV0001,CUST001,55.0,55.0,Credit Card,TV001,2025-08-01,2025-08-05,Paid
+INV0002,CUST002,120.0,0.0,Mailed Check,BB001,2025-08-01,,Pending

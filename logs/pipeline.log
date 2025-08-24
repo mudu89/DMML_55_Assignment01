@@ -1,0 +1,278 @@
+2025-08-23 23:51:12,531 - pipeline - INFO - Starting Prefect server...
+2025-08-23 23:51:18,111 - pipeline - INFO - Waiting for server to start...
+2025-08-23 23:51:28,111 - pipeline - INFO - Running ML Pipeline...
+2025-08-23 23:59:09,338 - pipeline - INFO - Starting Prefect server...
+2025-08-23 23:59:14,859 - pipeline - INFO - Waiting for server to start...
+2025-08-23 23:59:24,860 - pipeline - INFO - Running ML Pipeline...
+2025-08-23 23:59:48,571 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-23 23:59:48,584 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-23 23:59:49,484 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-23 23:59:49,544 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-23 23:59:49,545 - pipeline - INFO - Tables processed: ['billing', 'subscriptions']
+2025-08-23 23:59:50,377 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-23 23:59:50,432 - pipeline - INFO - Raw data storage completed successfully
+2025-08-23 23:59:51,120 - pipeline - INFO - Starting data validation
+2025-08-23 23:59:51,122 - pipeline - INFO - Data validation completed successfully
+2025-08-23 23:59:51,838 - pipeline - INFO - Starting data preparation...
+2025-08-23 23:59:51,846 - pipeline - INFO - Data preparation completed successfully!
+2025-08-23 23:59:53,329 - pipeline - INFO - Starting data transformation...
+2025-08-23 23:59:53,334 - pipeline - INFO - Data transformation completed successfully!
+2025-08-23 23:59:55,044 - pipeline - INFO - Starting feature store update...
+2025-08-23 23:59:55,229 - pipeline - INFO - Feature store update completed successfully!
+2025-08-23 23:59:56,629 - pipeline - INFO - Starting data versioning...
+2025-08-23 23:59:56,702 - pipeline - INFO - Data versioning completed successfully!
+2025-08-23 23:59:58,700 - pipeline - INFO - Starting model building...
+2025-08-23 23:59:58,716 - pipeline - INFO - Model building completed successfully!
+2025-08-23 23:59:59,226 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 00:00:00,502 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 00:00:00,503 - pipeline - INFO - Stopping Prefect server...
+2025-08-24 00:16:20,403 - pipeline - INFO - Starting Prefect server...
+2025-08-24 00:16:26,115 - pipeline - INFO - Waiting for server to start...
+2025-08-24 00:16:36,116 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 00:16:54,812 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 00:16:54,814 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 00:16:55,595 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 00:16:55,673 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 00:16:55,693 - pipeline - INFO - Tables processed: ['billing', 'subscriptions']
+2025-08-24 00:16:56,738 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 00:16:56,774 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 00:16:57,421 - pipeline - INFO - Starting data validation
+2025-08-24 00:16:57,425 - pipeline - INFO - Data validation completed successfully
+2025-08-24 00:16:57,996 - pipeline - INFO - Starting data preparation...
+2025-08-24 00:16:58,005 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 00:16:58,945 - pipeline - INFO - Starting data transformation...
+2025-08-24 00:16:58,977 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 00:16:59,998 - pipeline - INFO - Starting feature store update...
+2025-08-24 00:17:00,011 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 00:17:00,761 - pipeline - INFO - Starting data versioning...
+2025-08-24 00:17:00,763 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 00:17:01,447 - pipeline - INFO - Starting model building...
+2025-08-24 00:17:01,449 - pipeline - INFO - Model building completed successfully!
+2025-08-24 00:17:01,478 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 00:17:02,540 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 00:17:02,540 - pipeline - INFO - Stopping Prefect server...
+2025-08-24 01:13:44,203 - pipeline - INFO - Starting Prefect server...
+2025-08-24 01:13:49,556 - pipeline - INFO - Waiting for server to start...
+2025-08-24 01:13:59,557 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 01:14:15,649 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 01:14:15,651 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 01:14:17,052 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 01:14:17,078 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 01:14:17,080 - pipeline - INFO - Tables processed: ['billing', 'subscriptions']
+2025-08-24 01:14:18,269 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:14:18,315 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:14:18,318 - pipeline - ERROR - Raw data storage error: 'dict' object has no attribute 'shape'
+2025-08-24 01:14:18,334 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:14:18,357 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:14:18,360 - pipeline - ERROR - Raw data storage error: 'dict' object has no attribute 'shape'
+2025-08-24 01:14:18,392 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 01:14:19,958 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 01:14:19,960 - pipeline - INFO - Stopping Prefect server...
+2025-08-24 01:28:32,393 - pipeline - INFO - Starting Prefect server...
+2025-08-24 01:28:38,122 - pipeline - INFO - Waiting for server to start...
+2025-08-24 01:28:48,123 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 01:29:07,845 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 01:29:07,848 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 01:29:09,146 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 01:29:09,179 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 01:29:10,533 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:29:10,572 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:29:10,577 - pipeline - ERROR - Raw data storage error: 'list' object has no attribute 'keys'
+2025-08-24 01:29:10,598 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:29:10,620 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:29:10,624 - pipeline - ERROR - Raw data storage error: 'list' object has no attribute 'keys'
+2025-08-24 01:29:10,660 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 01:29:11,683 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 01:29:11,684 - pipeline - INFO - Stopping Prefect server...
+2025-08-24 01:31:10,662 - pipeline - INFO - Starting Prefect server...
+2025-08-24 01:31:15,957 - pipeline - INFO - Waiting for server to start...
+2025-08-24 01:31:25,959 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 01:31:50,801 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 01:31:50,816 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 01:31:52,154 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 01:31:52,195 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 01:31:53,346 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:31:53,382 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:31:53,384 - pipeline - ERROR - Raw data storage error: format_storage_tree() missing 1 required positional argument: 'date'
+2025-08-24 01:31:53,401 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 01:31:53,431 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 01:31:53,433 - pipeline - ERROR - Raw data storage error: format_storage_tree() missing 1 required positional argument: 'date'
+2025-08-24 01:31:53,465 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 01:31:54,485 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 01:31:54,485 - pipeline - INFO - Stopping Prefect server...
+2025-08-24 05:57:50,215 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 05:57:50,217 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 05:57:50,811 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 05:57:50,827 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 05:57:51,405 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 05:57:51,434 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 05:57:51,438 - pipeline - ERROR - Raw data storage error: format_table_details() got an unexpected keyword argument 'include_paths'
+2025-08-24 05:57:51,453 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 05:57:51,471 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 05:57:51,473 - pipeline - ERROR - Raw data storage error: format_table_details() got an unexpected keyword argument 'include_paths'
+2025-08-24 05:57:51,495 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:01:51,531 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:01:51,532 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:01:52,352 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:01:52,374 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:01:53,292 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:01:53,333 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:01:53,896 - pipeline - INFO - Starting data validation
+2025-08-24 06:01:53,899 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:01:54,328 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:01:54,331 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:01:55,001 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:01:55,004 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:01:55,789 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:01:55,791 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:01:56,286 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:01:56,288 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:01:56,747 - pipeline - INFO - Starting model building...
+2025-08-24 06:01:56,750 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:01:56,767 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:15:22,375 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:15:22,378 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:15:23,560 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:15:23,649 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:15:24,643 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:15:24,675 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:15:25,234 - pipeline - INFO - Starting data validation
+2025-08-24 06:15:25,236 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:15:25,703 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:15:25,705 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:15:26,394 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:15:26,396 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:15:27,086 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:15:27,088 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:15:27,643 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:15:27,646 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:15:28,349 - pipeline - INFO - Starting model building...
+2025-08-24 06:15:28,351 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:15:28,390 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:19:11,111 - pipeline - INFO - Starting Prefect server...
+2025-08-24 06:19:16,125 - pipeline - INFO - Waiting for server to be ready... (1/30)
+2025-08-24 06:19:19,167 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:19:19,167 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:19:32,261 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:19:32,263 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:19:32,790 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:19:32,806 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:19:33,373 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:19:33,406 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:19:33,888 - pipeline - INFO - Starting data validation
+2025-08-24 06:19:33,890 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:19:34,359 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:19:34,360 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:19:35,009 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:19:35,013 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:19:35,677 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:19:35,680 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:19:36,156 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:19:36,157 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:19:36,541 - pipeline - INFO - Starting model building...
+2025-08-24 06:19:36,543 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:19:36,559 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:19:37,223 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 06:26:31,141 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 06:26:36,144 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:26:36,144 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:26:47,520 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:26:47,522 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:26:48,079 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:26:48,090 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:26:48,721 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:26:48,764 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:26:49,295 - pipeline - INFO - Starting data validation
+2025-08-24 06:26:49,297 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:26:49,683 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:26:49,684 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:26:50,080 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:26:50,082 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:26:50,678 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:26:50,680 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:26:51,332 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:26:51,334 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:26:51,761 - pipeline - INFO - Starting model building...
+2025-08-24 06:26:51,762 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:26:51,767 - pipeline - INFO - ML Data Pipeline completed successfully!
+2025-08-24 06:26:51,770 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:26:52,389 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 06:33:35,892 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 06:33:40,910 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:33:40,910 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:33:53,750 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:33:53,752 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:33:54,324 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:33:54,337 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:33:54,969 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:33:54,990 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:33:55,378 - pipeline - INFO - Starting data validation
+2025-08-24 06:33:55,382 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:33:55,847 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:33:55,849 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:33:56,473 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:33:56,481 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:33:57,208 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:33:57,211 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:33:57,719 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:33:57,720 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:33:58,216 - pipeline - INFO - Starting model building...
+2025-08-24 06:33:58,218 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:33:58,224 - pipeline - INFO - ML Data Pipeline completed successfully!
+2025-08-24 06:33:58,228 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:33:58,963 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 06:36:14,029 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 06:36:18,986 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:36:18,987 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:36:32,675 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:36:32,677 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:36:33,478 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:36:33,502 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:36:33,503 - pipeline - ERROR - Data ingestion error: 'list' object has no attribute 'items'
+2025-08-24 06:37:03,534 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:37:03,648 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:37:03,650 - pipeline - ERROR - Data ingestion error: 'list' object has no attribute 'items'
+2025-08-24 06:37:33,678 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:37:33,690 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:37:33,692 - pipeline - ERROR - Data ingestion error: 'list' object has no attribute 'items'
+2025-08-24 06:37:33,719 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:37:34,480 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 06:39:42,881 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 06:39:47,868 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:39:47,868 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:40:03,805 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:40:03,807 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:40:04,546 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:40:04,563 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:40:05,489 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:40:05,532 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:40:05,535 - pipeline - ERROR - Raw data storage error: 'list' object has no attribute 'items'
+2025-08-24 06:40:05,559 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:40:05,586 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:40:05,589 - pipeline - ERROR - Raw data storage error: 'list' object has no attribute 'items'
+2025-08-24 06:40:05,613 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:40:06,450 - pipeline - INFO - ML Pipeline run completed.
+2025-08-24 06:42:53,345 - pipeline - INFO - Prefect server is already running at http://localhost:4200
+2025-08-24 06:42:58,345 - pipeline - INFO - Prefect server is ready!
+2025-08-24 06:42:58,345 - pipeline - INFO - Running ML Pipeline...
+2025-08-24 06:43:12,050 - pipeline - INFO - Starting ML Data Pipeline
+2025-08-24 06:43:12,052 - pipeline - INFO - Changed working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01
+2025-08-24 06:43:12,555 - pipeline - INFO - Starting data ingestion from database sources
+2025-08-24 06:43:12,577 - pipeline - INFO - Data ingestion completed - Total records: 4
+2025-08-24 06:43:13,124 - pipeline - INFO - Starting raw data storage for 2 data sources
+2025-08-24 06:43:13,147 - pipeline - INFO - Raw data storage completed successfully
+2025-08-24 06:43:13,641 - pipeline - INFO - Starting data validation
+2025-08-24 06:43:13,645 - pipeline - INFO - Data validation completed successfully
+2025-08-24 06:43:14,140 - pipeline - INFO - Starting data preparation...
+2025-08-24 06:43:14,142 - pipeline - INFO - Data preparation completed successfully!
+2025-08-24 06:43:14,826 - pipeline - INFO - Starting data transformation...
+2025-08-24 06:43:14,829 - pipeline - INFO - Data transformation completed successfully!
+2025-08-24 06:43:15,470 - pipeline - INFO - Starting feature store update...
+2025-08-24 06:43:15,473 - pipeline - INFO - Feature store update completed successfully!
+2025-08-24 06:43:16,013 - pipeline - INFO - Starting data versioning...
+2025-08-24 06:43:16,015 - pipeline - INFO - Data versioning completed successfully!
+2025-08-24 06:43:16,430 - pipeline - INFO - Starting model building...
+2025-08-24 06:43:16,432 - pipeline - INFO - Model building completed successfully!
+2025-08-24 06:43:16,436 - pipeline - INFO - ML Data Pipeline completed successfully!
+2025-08-24 06:43:16,438 - pipeline - INFO - Restored working directory to: C:\Users\msf12\OneDrive - Sky\Documents\BITS\Semester 2\DMML\DMML_55_Assignment01\Task10_Orchestration
+2025-08-24 06:43:16,976 - pipeline - INFO - ML Pipeline run completed.
